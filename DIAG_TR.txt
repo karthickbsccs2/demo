@@ -1,0 +1,30 @@
+﻿#include<stdio.h>
+#include<conio.h>
+#define ROW 4
+#define COL 4
+
+void main(void)
+{
+int r= ROW,c=COL,i=0,j=0,t=0;
+int a[ROW][COL]={1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16};
+//int a[ROW][COL]={1,2,3,4,5,6};
+clrscr();
+
+while(t<=(ROW+COL-2) )
+{
+for (j= 0; j<COL; j++)
+{
+ for (i=0;i<ROW;i++)
+ {
+  if (t==(i+j) )
+  {
+   printf("%d\n",a[i][j]);
+  }
+ }
+}
+i=0;
+j=0;
+ t++;
+}
+getch();
+}
